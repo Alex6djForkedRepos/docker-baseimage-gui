@@ -19,6 +19,11 @@ baseimage:
     any VNC client.
   gui: true
   history:
+    - version: 4.11.1
+      date: 2026-02-18
+      fixed:
+        - 'Fixed by the update of jlesage/baseimage to version 3.10.5:'
+        - '2:`take-ownership helper` failure when multiple users/groups share the same id.'
     - version: 4.11.0
       date: 2026-02-14
       changes:
