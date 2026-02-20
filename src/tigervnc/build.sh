@@ -592,6 +592,7 @@ log "Patching mesa..."
 patch -p1 -d /tmp/mesa < "$SCRIPT_DIR"/mesa-gl-static-lib.patch
 patch -p1 -d /tmp/mesa < "$SCRIPT_DIR"/mesa-util-format-Check-for-NEON-before-using-it.patch
 patch -p1 -d /tmp/mesa < "$SCRIPT_DIR"/mesa-add-llvm-module-selectiondag.patch
+patch -p1 -d /tmp/mesa < "$SCRIPT_DIR"/mesa-dri-disable-egl.patch
 
 log "Configuring mesa..."
 (

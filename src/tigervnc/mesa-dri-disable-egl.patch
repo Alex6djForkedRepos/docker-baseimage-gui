@@ -1,0 +1,16 @@
+#
+# EGL is disabled in Mesa, but this particular libraries tries to dlopen the
+# libELG libraries. This is causing problems if it exists on the system.
+#
+--- a/src/gallium/targets/dril/dril_target.c	2026-02-20 17:39:51.762564374 -0500
++++ b/src/gallium/targets/dril/dril_target.c	2026-02-20 17:41:11.927226640 -0500
+@@ -349,7 +349,9 @@
+    unsigned last_start = 0;
+ 
+    /* dlopen/dlsym to avoid linkage */
++#if 0
+    egl = dlopen("libEGL.so.1", RTLD_LAZY | RTLD_LOCAL);
++#endif
+    if (!egl)
+       return false;
+ 
