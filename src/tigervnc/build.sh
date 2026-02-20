@@ -982,7 +982,7 @@ find "$TIGERVNC_ROOTFS_BASE_DIR"/bin -type f -executable -exec echo "  -> Settin
 
 log "Patching ELF of libraries..."
 find "$TIGERVNC_ROOTFS_BASE_DIR"/lib -maxdepth 1 -type f -name "lib*" -exec echo "  -> Setting rpath of {}..." ';' -exec patchelf --set-rpath '$ORIGIN' {} ';'
-find "$TIGERVNC_ROOTFS_BASE_DIR"/lib/dri -maxdepth 1 -type f -name "lib*" -exec echo "  -> Setting rpath of {}..." ';' -exec patchelf --set-rpath '$ORIGIN/../lib' {} ';'
+find "$TIGERVNC_ROOTFS_BASE_DIR"/lib/dri -maxdepth 1 -type f -name "lib*" -exec echo "  -> Setting rpath of {}..." ';' -exec patchelf --set-rpath '$ORIGIN/../' {} ';'
 
 #
 # Cleanup.
