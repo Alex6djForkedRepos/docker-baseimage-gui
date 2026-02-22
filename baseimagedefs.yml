@@ -20,7 +20,7 @@ baseimage:
   gui: true
   history:
     - version: 4.11.2
-      date: 2026-02-20
+      date: 2026-02-22
       fixed:
         - 'X server failing to find the appropriate Mesa driver on some setups.'
     - version: 4.11.1

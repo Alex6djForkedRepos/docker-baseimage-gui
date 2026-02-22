@@ -41,12 +41,12 @@ LLVM_VERSION=19.1.4
 TIGERVNC_URL=https://github.com/TigerVNC/tigervnc/archive/v${TIGERVNC_VERSION}.tar.gz
 XSERVER_URL=https://www.x.org/releases/individual/xserver/xorg-server-${XSERVER_VERSION}.tar.gz
 
-GMP_URL=https://ftp.gnu.org/gnu/gmp/gmp-${GMP_VERSION}.tar.xz
-NETTLE_URL=https://ftp.gnu.org/gnu/nettle/nettle-${NETTLE_VERSION}.tar.gz
+GMP_URL=https://ftpmirror.gnu.org/gnu/gmp/gmp-${GMP_VERSION}.tar.xz
+NETTLE_URL=https://ftpmirror.gnu.org/gnu/nettle/nettle-${NETTLE_VERSION}.tar.gz
 GNUTLS_URL=https://www.gnupg.org/ftp/gcrypt/gnutls/v${GNUTLS_VERSION%.*}/gnutls-${GNUTLS_VERSION}.tar.xz
 LIBXFONT2_URL=https://www.x.org/pub/individual/lib/libXfont2-${LIBXFONT2_VERSION}.tar.gz
 LIBFONTENC_URL=https://www.x.org/releases/individual/lib/libfontenc-${LIBFONTENC_VERSION}.tar.gz
-LIBTASN1_URL=https://ftp.gnu.org/gnu/libtasn1/libtasn1-${LIBTASN1_VERSION}.tar.gz
+LIBTASN1_URL=https://ftpmirror.gnu.org/gnu/libtasn1/libtasn1-${LIBTASN1_VERSION}.tar.gz
 LIBXSHMFENCE_URL=https://www.x.org/releases/individual/lib/libxshmfence-${LIBXSHMFENCE_VERSION}.tar.gz
 LIBXXF86VM_URL=https://www.x.org/releases/individual/lib/libXxf86vm-${LIBXXF86VM_VERSION}.tar.xz
 LIBDRM_URL=https://dri.freedesktop.org/libdrm/libdrm-${LIBDRM_VERSION}.tar.xz
